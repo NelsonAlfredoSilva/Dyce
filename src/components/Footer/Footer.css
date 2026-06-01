@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    background-color: #121212;
+    color: #fff;
+    padding-top: 5px;
+    font-size: 0.75rem;
+}
+
+footer div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer div p {
+    width: 60%;
+}
+.titulo_footer {
+    width: 100%;
+    text-align: center;
+}
+
+.ul_footer {
+    list-style: none;
+}
+
+.ul_footer li {
+    margin: 0.5rem;
+}
