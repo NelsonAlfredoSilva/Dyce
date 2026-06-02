@@ -1,0 +1,54 @@
+.contenedor {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+section {
+    padding: 5px;
+    display: flex;
+}
+
+.direccion_en_columna {
+    flex-direction: column;
+}
+.fuente_azul {
+    color: blue;
+}
+
+.fondo_azul {
+    background-color: blue;
+}
+.titular {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.size_50 {
+    width: 50%;
+}
+
+.resaltado_verde {
+    background-color: aquamarine;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.bordes_solidos {
+    border: 1px solid;
+}
+
+.boton_opciones {
+    padding: 15px;
+}
+
+.boton_opciones button {
+    background-color: blue;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
