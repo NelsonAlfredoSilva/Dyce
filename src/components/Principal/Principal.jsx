@@ -1,8 +1,9 @@
+import { Botones } from '../Botones/Botones';
 import './Principal.css'
 export const Principal = () => {
     return (
-        <div className="contenedor">
-            <section className='size_50 direccion_en_columna'>
+        <section className="contenedor">
+            <div className='size_50 direccion_en_columna'>
                 <div className='resaltado_verde'>Componentes Electrónicos de Alta Calidad</div>
                 <p className='size_50 titular'>
                     La mejor <span className='fuente_azul'>Tecnología</span> al
@@ -14,12 +15,12 @@ export const Principal = () => {
                     <p>Distribuidores Autorizados de las mejores marcas mundiales.</p>
                 </div>
                 <div className='boton_opciones'>
-                    <button>Ver Catálogo</button>
-                    <button>Contactar Ventas</button>
+                    <Botones texto="Ver catalogo" className="prinPerso"></Botones>
+                    <Botones texto="Contactar ventas" className="prinPerso"></Botones>
                 </div>
-            </section>
+            </div>
             
-            <section className='size_50'>
+            <div className='size_50'>
                 <div>
                     <div>
                         <p>Semiconductores</p>
@@ -40,7 +41,7 @@ export const Principal = () => {
                         <h5>Años de experiencia</h5>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     ) 
 }
