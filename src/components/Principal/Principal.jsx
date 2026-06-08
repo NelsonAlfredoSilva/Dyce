@@ -1,47 +1,52 @@
-import { Cards } from '../Cards/Cards'
+import { Botones } from '../Botones/Botones';
+import { Card } from '../Cards/Card';
 import './Principal.css'
 export const Principal = () => {
     return (
-        <div className="contenedor__principal">
-            <section className='size_50per direccion_en_columna'>
+        <section className="contenedor">
+            <div className='size_50 direccion_en_columna'>
                 <div className='resaltado_verde'>Componentes Electrónicos de Alta Calidad</div>
                 <p className='size_50per titular'>
                     La mejor <span className='fuente_azul'>Tecnología</span> al
-                    Alcance de tus 
+                    Alcance de tus
                     Proyectos
                 </p>
-                <div>
+                <div className='descContainer'>
                     <p>Mas de 10.000 Componentes electrónicos en stock.</p>
                     <p>Distribuidores Autorizados de las mejores marcas mundiales.</p>
                 </div>
-                <div className='commandGroup'>
-                    <button>Ver Catálogo</button>
-                    <button>Contactar Ventas</button>
+                <div className='boton_opciones'>
+                    <Botones texto="Ver catalogo" className="prinPerso" icon="arrow-forward-outline"></Botones>
+                    <Botones texto="Contactar ventas" className="prinPerso"></Botones>
                 </div>
-            </section>
-            
-            <section className='size_50per'>
-                <div className='size_50per direccion_en_columna justificado_con_espacios'>
-                    <Cards>
-                        <p>Semiconductores</p>
-                        <p>+3.000 referencias</p>
-                    </Cards>
-                    <Cards>
-                        <h1>10K+</h1>
-                        <p>Productos en Stock</p>
-                    </Cards>
-                </div>
-                <div>
-                    <Cards>
-                        <p>Envío en 24hs</p>
-                        <p>a todo el pais</p>
-                    </Cards>
-                    <Cards estiloAdd = "colorFondo_azul">
-                        <h1>15+</h1>
-                        <h5>Años de experiencia</h5>
-                    </Cards>
-                </div>
-            </section>
-        </div>
-    ) 
+            </div>
+
+            <div className='size_50 contenedorPrin'>
+
+                <Card className="cardAlta">
+                    <p>Semiconductores</p>
+                    <p>+3.000 referencias</p>
+                </Card>
+
+
+                <Card>
+                    <h1>10K+</h1>
+                    <p>Productos en Stock</p>
+                </Card>
+
+
+                <Card>
+                    <p>Envío en 24hs</p>
+                    <p>a todo el pais</p>
+                </Card>
+
+
+                <Card estiloAdd="colorFondo_azul">
+                    <h1>15+</h1>
+                    <h5>Años de experiencia</h5>
+                </Card>
+
+            </div>
+        </section>
+    )
 }

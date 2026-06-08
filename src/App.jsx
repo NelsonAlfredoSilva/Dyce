@@ -1,16 +1,25 @@
-import './App.css'
-import { Footer } from './components/Footer/Footer'
-import { Header } from './components/Header/Header'
-import { Principal } from './components/Principal/Principal'
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Inicio } from './pages/inicio/Inicio';
+import { Catalogo } from './pages/catalogo/Catalogo';
+import { Contacto } from './pages/contacto/Contacto';
+import { Nosotros } from './pages/nosotros/Nosotros';
+import { LayoutPublic } from './layouts/LayoutPublic';
+import './App.css';
 
 function App() {
   return (
     <>
-    <Header/>
-      <main>
-        <Principal/>
-      </main>
-    <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<LayoutPublic></LayoutPublic>}>
+            <Route path='/' element={<Inicio></Inicio>}></Route>
+            <Route path='/Catalogo' element={<Catalogo></Catalogo>}></Route>
+            <Route path='/Nosotros' element={<Nosotros></Nosotros>}></Route>
+            <Route path='/Contacto' element={<Nosotros></Nosotros>}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

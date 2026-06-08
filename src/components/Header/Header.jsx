@@ -1,6 +1,6 @@
-import { Nav } from "../Nav/Nav"
-import logo from "../../assets/logo.jpg"
-import './Header.css'
+import { Nav } from "../Nav/Nav";
+import logo from "../../assets/logo.jpg";
+import './Header.css';
 
 export const Header = () => {
     return (
