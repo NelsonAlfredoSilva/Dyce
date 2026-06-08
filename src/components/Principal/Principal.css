@@ -32,17 +32,14 @@ section {
 .size_50per {
     width: 50%;
 }
-
 .contenedorPrin {
     width: 50%;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
-    align-items: center;
-
+    row-gap: 0.5rem;
+    align-content: center;
 }
-
 
 .descContainer {
     margin: .5rem;
