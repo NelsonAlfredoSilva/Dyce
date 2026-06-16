@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "categoria": "Semiconductores",
+        "nombre": "Arduino Uno R3",
+        "prec": 4500,
+        "stock": 15,
+        "img": "/arduino.png",
+        "destacado": true,
+        "descuento": 0,
+        "descripcion": "Microcontrolador basado en ATmega328P. Ideal para proyectos de electrónica y programación. Incluye 14 pines digitales y 6 analógicos."
+    },
+    {
+        "id": 2,
+        "categoria": "Semiconductores",
+        "nombre": "Raspberry Pi 4 Model B",
+        "prec": 32000,
+        "stock": 8,
+        "img": "/raspberry.png",
+        "destacado": true,
+        "descuento": 10,
+        "descripcion": "Mini computadora de placa única con procesador ARM Cortex-A72 de 4 núcleos. 4GB de RAM. Ideal para proyectos de IoT y sistemas embebidos."
+    },
+    {
+        "id": 3,
+        "categoria": "Sensores",
+        "nombre": "Sensor Ultrasónico HC-SR04",
+        "prec": 850,
+        "stock": 30,
+        "img": "/sensor.png",
+        "destacado": false,
+        "descuento": 5,
+        "descripcion": "Sensor de distancia ultrasónico. Rango de medición de 2cm a 400cm. Compatible con Arduino y Raspberry Pi."
+    },
+    {
+        "id": 4,
+        "categoria": "Módulos",
+        "nombre": "Módulo WiFi ESP8266",
+        "prec": 1200,
+        "stock": 20,
+        "img": "/esp8266.png",
+        "destacado": true,
+        "descuento": 0,
+        "descripcion": "Módulo WiFi de bajo costo para proyectos IoT. Compatible con Arduino. Permite conectar cualquier proyecto a internet de forma sencilla."
+    },
+    {
+        "id": 5,
+        "categoria": "Componentes",
+        "nombre": "Kit Resistencias 1/4W",
+        "prec": 650,
+        "stock": 50,
+        "img": "/resistencias.png",
+        "destacado": false,
+        "descuento": 15,
+        "descripcion": "Kit de 600 resistencias de 1/4W con valores desde 1 ohm hasta 1 Mohm. 30 valores distintos, 20 unidades de cada valor."
+    }
+]
