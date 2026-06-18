@@ -6,7 +6,7 @@ export const Principal = () => {
         <section className="contenedor">
             <div className='size_50 direccion_en_columna'>
                 <div className='resaltado_verde'>Componentes Electrónicos de Alta Calidad</div>
-                <p className='size_50 titular'>
+                <p className='size_50per titular'>
                     La mejor <span className='fuente_azul'>Tecnología</span> al
                     Alcance de tus
                     Proyectos

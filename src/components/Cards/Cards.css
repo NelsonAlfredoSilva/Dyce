@@ -1,0 +1,12 @@
+.contenedor__cards {
+    border: 1px solid #c1bcbc2b;
+    border-radius: 8px;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.colorFondo_azul {
+    background-color: blue;
+    color: white;
+}
