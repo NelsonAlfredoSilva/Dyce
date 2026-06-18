@@ -1,0 +1,53 @@
+.filtrosContainer{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.filtrosContainer .-barra{
+    width: 40%;
+    display: flex;
+    gap: .5rem;
+
+}
+.filtrosContainer .-barra .buscar{
+    font-size: 2rem;
+    color: black;
+}
+.filtrosContainer .-barra input {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 15px;
+}
+.filtrosContainer .-filtraje{
+    width: 10%;
+    overflow: hidden;
+}
+.filtrosContainer .-filtraje .-btnF{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 2.5rem;
+    border-radius:5px ;
+    border: 1px solid rgb(163, 163, 163);
+}
+.filtrosContainer .-filtraje .dropdownContainer{
+    position: absolute;
+    left: 43rem;
+    top: 5rem;
+    z-index: 50;
+    background-color: rgb(211, 211, 211);
+    width: 15%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-radius:10px ;
+
+}
+.filtrosContainer .-filtraje .dropdownContainer label{
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 .5rem;
+}

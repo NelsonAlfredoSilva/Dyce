@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "categoria": "Semiconductores",
+        "nombre": "Arduino Uno R3",
+        "prec": 4500,
+        "stock": 15,
+        "img": "/default.jfif",
+        "destacado": true,
+        "descuento": 0,
+        "descripcion": "Microcontrolador basado en ATmega328P."
+    },
+    {
+        "id": 2,
+        "categoria": "Semiconductores",
+        "nombre": "Raspberry Pi 4 Model B",
+        "prec": 32000,
+        "stock": 8,
+        "img": "/default.jfif",
+        "destacado": true,
+        "descuento": 10,
+        "descripcion": "Mini computadora de placa única con procesador ARM Cortex-A72 de 4 núcleos. 4GB de RAM."
+    },
+    {
+        "id": 3,
+        "categoria": "Sensores",
+        "nombre": "Sensor Ultrasónico HC-SR04",
+        "prec": 850,
+        "stock": 30,
+        "img": "/default.jfif",
+        "destacado": false,
+        "descuento": 5,
+        "descripcion": "Sensor de distancia ultrasónico."
+    },
+    {
+        "id": 4,
+        "categoria": "Módulos",
+        "nombre": "Módulo WiFi ESP8266",
+        "prec": 1200,
+        "stock": 0,
+        "img": "/default.jfif",
+        "destacado": true,
+        "descuento": 0,
+        "descripcion": "Módulo WiFi de bajo costo para proyectos IoT."
+    },
+    {
+        "id": 5,
+        "categoria": "Componentes",
+        "nombre": "Kit Resistencias 1/4W",
+        "prec": 650,
+        "stock": 50,
+        "img": "/default.jfif",
+        "destacado": false,
+        "descuento": 15,
+        "descripcion": "Kit de 600 resistencias de 1/4W con valores desde 1 ohm hasta 1 Mohm."
+    }
+]
