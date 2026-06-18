@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,8 +15,3 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex: 1;
-  margin: auto;
-  width: 90%;
-}

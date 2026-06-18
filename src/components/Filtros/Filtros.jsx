@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Botones } from "../Botones/Botones";
+import './Filtros.css';
 
 export const Filtros = ({ onFiltrar, onBuscar, categorias }) => {
     //estados del dropdown de filtros
@@ -24,9 +25,10 @@ export const Filtros = ({ onFiltrar, onBuscar, categorias }) => {
             <div className="filtrosContainer">
                 <div className="-barra">
                     <input onChange={(e) => onBuscar(e.target.value)} placeholder="Buscar.."></input>
+                    <ion-icon name="search-outline" className="buscar"></ion-icon>
                 </div>
                 <div className="-filtraje">
-                    <Botones texto='Filtrar' icon='options-outline' onClick={() => setAbierto(!abierto)}></Botones>
+                    <Botones texto='Filtrar'className='-btnF' icon='options-outline' onClick={() => setAbierto(!abierto)}></Botones>
                     {abierto && (
                         <div className="dropdownContainer">
                             {categorias.map((cat, i) => (

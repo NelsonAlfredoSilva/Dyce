@@ -4,8 +4,8 @@ import './CardProduct.css';
 
 export const CardProduct = ({ categoria, nombre, prec, stock, img, descripcion }) => {
     const noStock = stock === 0 ? <p className="noStock">Sin Stock</p> : null
-    const bajoStock = stock > 0 && stock <= 5 ? <p className="bajoStock">Bajo Stock</p> : null
-    const hayStock = stock > 5 ? <p className="hayStock">Hay Stock</p> : null
+    const bajoStock = stock > 0 && stock <= 20 ? <p className="bajoStock">Poco Stock</p> : null
+    const hayStock = stock > 20 ? <p className="hayStock">Hay Stock</p> : null
 
 
     return (
@@ -25,14 +25,14 @@ export const CardProduct = ({ categoria, nombre, prec, stock, img, descripcion }
                         <p>{descripcion}</p>
                     </div>
                     <div className="-prec">
-                        <p>{prec}</p>
+                        <p>${prec}</p>
                     </div>
                 </div>
-            </div>
-            <div className="cardContainer-stock">
-                { noStock }
-                {bajoStock}
-                {hayStock}
+                <div className="cardContainer-stock">
+                    {noStock}
+                    {bajoStock}
+                    {hayStock}
+                </div>
             </div>
         </>
     )
