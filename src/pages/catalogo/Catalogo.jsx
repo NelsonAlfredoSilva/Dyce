@@ -2,20 +2,11 @@ import { useState, useEffect } from "react";
 import { CardProduct } from "../../components/CardProduct/CardProduct";
 import { Filtros } from "../../components/Filtros/Filtros";
 import './Catalogo.css';
-export const Catalogo = () => {
-    const [productos, setProductos] = useState([]);
+export const Catalogo = ({productos}) => {
     const [busqueda , setBusqueda] = useState('');
     const [catFiltrada , setCatFiltrada] = useState([]);
-    const [categorias, setCategorias] = useState([]);
+    const categoria = [...new Set(productos.map(p=>p.categoria))]
 
-    useEffect(() => {
-    fetch('/productos.json')
-        .then(res => res.json())
-        .then(data => {
-            setProductos(data)
-            setCategorias([...new Set(data.map(p => p.categoria))])
-        })
-}, [])
 
     const productosFiltrados = productos
         .filter(p => catFiltrada.length === 0 || catFiltrada.includes(p.categoria))
@@ -25,8 +16,7 @@ export const Catalogo = () => {
     return (
         <>
             <section className="catalogoFiltros">
-                <Filtros onFiltrar={setCatFiltrada} onBuscar={setBusqueda} categorias={categorias}></Filtros>
-
+                <Filtros onFiltrar={setCatFiltrada} onBuscar={setBusqueda} categorias={categoria}></Filtros>
             </section>
             <section className="catalogoProd">
                 {
