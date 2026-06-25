@@ -1,7 +1,8 @@
 .contenedor__cards {
     border: 1px solid #c1bcbc2b;
     border-radius: 8px;
-    min-width: 50px;
+    width: 40%;
+    max-width: 30%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 20px;
 }

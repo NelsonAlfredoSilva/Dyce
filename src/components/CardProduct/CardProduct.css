@@ -1,4 +1,4 @@
-.cardConatiner{
+.cardContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,17 +13,17 @@
     
 
 }
-.cardConatiner .cardContainerImg{
+.cardContainer .cardContainerImg{
     width: 100%;
     height: 50%;
     overflow: hidden;
 }
-.cardConatiner img {
+.cardContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.cardConatiner .cardContainerContent{
+.cardContainer .cardContainerContent{
     height: 50%;
     display: flex;
     min-height: 50%;
@@ -34,24 +34,24 @@
     margin: 0 .5rem;
 
 }
-.cardConatiner .cardContainerContent .-categoria{
+.cardContainer .cardContainerContent .-categoria{
     background-color: rgba(170, 170, 170, 0.76);
     padding: .3rem;
     border-radius: 10px;
     margin: 0rem .5rem;
 }
-.cardConatiner .cardContainerContent .-titulo{
+.cardContainer .cardContainerContent .-titulo{
     font-size: 1.5rem;
     font-style: bold;
     margin: 0rem .5rem;
 }
-.cardConatiner .cardContainerContent .-desc{
+.cardContainer .cardContainerContent .-desc{
     font-size: 1rem;
     font-style: italic;
     color: grey;
     margin: 0rem .5rem;
 }
-.cardConatiner .cardContainerContent .-prec{
+.cardContainer .cardContainerContent .-prec{
     font-size: 1.2rem;
     font-style: bold;
     margin: .5rem .5rem;

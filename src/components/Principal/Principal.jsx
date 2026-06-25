@@ -23,28 +23,6 @@ export const Principal = () => {
 
             <div className='size_50 contenedorPrin'>
 
-                <Card className="cardAlta">
-                    <p>Semiconductores</p>
-                    <p>+3.000 referencias</p>
-                </Card>
-
-
-                <Card>
-                    <h1>10K+</h1>
-                    <p>Productos en Stock</p>
-                </Card>
-
-
-                <Card>
-                    <p>Envío en 24hs</p>
-                    <p>a todo el pais</p>
-                </Card>
-
-
-                <Card estiloAdd="colorFondo_azul">
-                    <h1>15+</h1>
-                    <h5>Años de experiencia</h5>
-                </Card>
 
             </div>
         </section>
