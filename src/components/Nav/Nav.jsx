@@ -1,10 +1,11 @@
 import { NavLink, Link } from 'react-router-dom';
 import './Nav.css';
 
-export const Nav = () => {
+export const Nav = ({menuAbierto}) => {
+    console.log('menuAbierto en Nav:', menuAbierto)
     return (
         <nav>
-            <ul className='nav-list'>
+            <ul className={menuAbierto ? 'nav-list abierto' : 'nav-list'}>
                 <li>
                         <NavLink to={`/`} className={({ isActive }) => isActive ? 'activo' : ''}>Inicio</NavLink>
                     </li>
