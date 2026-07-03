@@ -1,5 +1,5 @@
 import { Nav } from "../Nav/Nav";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo.png";
 import './Header.css';
 
 export const Header = () => {

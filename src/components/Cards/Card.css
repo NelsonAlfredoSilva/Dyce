@@ -5,9 +5,10 @@
     max-width: 30%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 20px;
+    background-color: var(--cards);
 }
 
 .colorFondo_azul {
-    background-color: blue;
-    color: white;
+    background-color: var(--primario);
+    color: var(--cards);
 }

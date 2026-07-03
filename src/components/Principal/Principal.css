@@ -1,8 +1,3 @@
-/* Secciones en columnas*/
-section {
-    padding: 5px;
-    display: flex;
-}
 
 .contenedor__principal {
     display: flex;
@@ -11,25 +6,26 @@ section {
 
 .direccion_en_columna {
     width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
     flex-direction: column;
 }
 
 .fuente_azul {
-    color: blue;
+    color: var(--primario);
     font-size: 3.3rem;
 }
-.fondo_azul {
-    background-color: blue;
-}
+
 
 .titular {
+    margin: 0 2rem;
     font-weight: bold;
     font-size: 3rem;
-    width: 80%;
 }
 
 .size_50per {
-    width: 50%;
+    width: 80%;
 }
 .contenedorPrin {
     width: 50%;
@@ -41,19 +37,19 @@ section {
 }
 
 .descContainer {
-    margin: .5rem;
-    width: 80%;
+    margin: .5rem 2rem;
+    width: 100%;
     font-size: 2.8;
     color: grey;
 }
 
 .resaltado_verde {
-    background-color: rgba(206, 206, 206, 0.856);
     color: #000000;
     padding: 7px;
     border-radius: 10px;
     width: fit-content;
     margin: 1rem;
+    background-color: var(--detalles);
 }
 
 /* Tarjetas */
@@ -65,15 +61,20 @@ section {
     display: flex;
     justify-content: start;
     align-items: start;
+    margin: 0 2rem;
 }
 
 .prinPerso {
-    background-color: blue;
+    background-color: var(--primario);
     cursor: pointer;
     padding: 10px;
     border-radius: 8px;
     font-weight: bold;
-    color: white;
+    color: var(--texto);
     margin: 10px;
     max-height: 34px;
+    overflow: hidden;
+}
+@media (max-width: 480px){
+
 }
