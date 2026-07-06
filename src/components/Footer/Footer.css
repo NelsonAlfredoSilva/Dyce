@@ -1,7 +1,7 @@
 footer {
     display: flex;
-    background-color: #121212;
-    color: #fff;
+    background-color: var(--cards);
+    color: var(--texto);
     padding-top: 5px;
     font-size: 0.75rem;
 }
