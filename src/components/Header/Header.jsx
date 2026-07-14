@@ -16,7 +16,6 @@ const [menuAbierto, setMenuAbierto] = useState(false);
                 </div>
                 <div className="headerContainerImg">
                     <img src={logo} alt="Logo Diseños y Compronentes Electrónicos" className="imagen_logo" />
-                    <span>Diseños y Componentes Electrónicos</span>
                 </div>
             </div>
             <Nav menuAbierto={menuAbierto} />
