@@ -1,6 +1,8 @@
 .filtrosContainer{
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -50,4 +52,20 @@
     text-decoration: none;
     font-size: 1.1rem;
     margin: 0 .5rem;
+}
+/*RESPONSIVE CELUS*/
+@media (max-width:480px) {
+    .filtrosContainer .-barra{
+        width: 70%;
+    }
+    .filtrosContainer .-filtraje{
+        width: 30%;
+    }
+    .filtrosContainer .-filtraje .dropdownContainer{
+        left: 11rem;
+        top: 8rem;
+        width: 50%;
+        height: 120px;
+    }
+
 }

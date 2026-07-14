@@ -1,6 +1,6 @@
 footer {
     display: flex;
-    background-color: var(--cards);
+    background-color: var(--primario);
     color: var(--texto);
     padding-top: 5px;
     font-size: 0.75rem;

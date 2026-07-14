@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { CardProduct } from "../../components/CardProduct/CardProduct";
 import { Filtros } from "../../components/Filtros/Filtros";
+import { WspFloat } from "../../components/WspFloat/WspFloat";
 import './Catalogo.css';
 export const Catalogo = ({productos}) => {
     const [busqueda , setBusqueda] = useState('');
@@ -15,6 +16,7 @@ export const Catalogo = ({productos}) => {
 
     return (
         <>
+            <WspFloat></WspFloat>
             <section className="catalogoFiltros">
                 <Filtros onFiltrar={setCatFiltrada} onBuscar={setBusqueda} categorias={categoria}></Filtros>
             </section>

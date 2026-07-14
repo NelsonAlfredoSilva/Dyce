@@ -10,7 +10,7 @@ export const LayoutPublic = (children)=>{
         <>
         <Header></Header>
         <main>
-            <Outlet></Outlet>
+            <Outlet> </Outlet>
         </main>
         <Footer></Footer>
         </>
