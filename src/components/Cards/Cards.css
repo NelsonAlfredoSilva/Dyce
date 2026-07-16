@@ -1,12 +1,129 @@
-.contenedor__cards {
-    border: 1px solid #c1bcbc2b;
-    border-radius: 8px;
-    min-width: 50px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 20px;
+.homeValores {
+    padding: 3rem 0;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
 }
 
-.colorFondo_azul {
-    background-color: blue;
-    color: white;
+.homeValores h2 {
+    font-size: 2rem;
+    color: var(--marron-cookie);
+    margin-bottom: 2rem;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.homeValoresGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 450px;
+    overflow: hidden;
+    margin: .5rem;
+}
+
+.homeValorCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    width: 25%;
+    height: 180px;
+    margin: .5rem;
+    padding: 2rem 1.5rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.homeValorCard:hover {
+    transform: scale(1.03);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .18);
+}
+
+.homeValorCard:active {
+    transform: scale(1.03);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, .18);
+}
+
+.valorIcon {
+    font-size: 2.5rem;
+    color: #c47a9e;
+}
+
+.homeValorCard h3 {
+    font-size: 1.1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: #333;
+    overflow: hidden;
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.homeValorCard p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 0.9rem;
+    color: #888;
+    line-height: 1.5;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@media (max-width:480px) {
+
+    /*--valores*/
+    .homeValores {
+        height: auto;
+        margin: 0;
+    }
+
+    .homeValoresGrid {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        border: none;
+    }
+
+    .homeValorCard {
+        width: 80%;
+        margin: 0 .5rem;
+    }
+}
+/*-tablets celus grandes*/
+@media(max-width:768px) {
+    .homeValores {
+        height: auto;
+        margin: 0;
+    }
+
+    .homeValoresGrid {
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        border: none;
+    }
+
+    .homeValorCard {
+        width: 60%;
+        margin: 0 .5rem;
+    }
 }

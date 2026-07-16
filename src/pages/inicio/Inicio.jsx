@@ -1,8 +1,8 @@
-
-import {Principal} from '../../components/Principal/Principal';
-import { DestacadoCategoria } from '../../components/Destacado/DestacadoCategoria';
 import { DestacadoProducto } from '../../components/Destacado/DestacadoProducto';
 import { WspFloat } from '../../components/WspFloat/WspFloat';
+import { BannerSlider } from '../../components/BannerSlider/BannerSlider';
+import { Cards } from '../../components/Cards/Cards';
+
 export const Inicio= ({productos})=>{
     //para destacados
     const destacados = productos.filter(
@@ -11,8 +11,8 @@ export const Inicio= ({productos})=>{
     return(
         <>
             <WspFloat></WspFloat>
-            <Principal></Principal>
-            <DestacadoCategoria></DestacadoCategoria>
+            <BannerSlider></BannerSlider>
+            <Cards></Cards>
             <DestacadoProducto destacados={destacados}></DestacadoProducto>
         </>
     )
