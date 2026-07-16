@@ -1,25 +1,89 @@
 import { Nav } from "../Nav/Nav";
-import {Botones} from "../Botones/Botones";
-import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 import './Header.css';
 
 export const Header = () => {
-const [menuAbierto, setMenuAbierto] = useState(false);
 
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [mostrarMenu, setMostrarMenu] = useState(false);
+    const [cerrando, setCerrando] = useState(false);
+
+    const abrirMenu = () => {
+
+        setMostrarMenu(true);
+
+        setMenuOpen(true);
+
+        setCerrando(false);
+
+    };
+
+    const cerrarMenu = () => {
+
+        setCerrando(true);
+
+        setTimeout(() => {
+
+            setMenuOpen(false);
+
+            setMostrarMenu(false);
+
+            setCerrando(false);
+
+        }, 350);
+
+    };
 
     return (
         <header>
+
             <div className="headerContainer">
+
                 <div className="menuHambur">
-                    <ion-icon name="menu-outline" className="menuResponsive active" onClick={() => setMenuAbierto(!menuAbierto)}></ion-icon>
+
+                    <ion-icon
+                        name={menuOpen ? "close-outline" : "menu-outline"}
+                        className="menuResponsive"
+                        onClick={() => {
+
+                            if(menuOpen){
+
+                                cerrarMenu();
+
+                            }else{
+
+                                abrirMenu();
+
+                            }
+
+                        }}
+                    ></ion-icon>
+
                 </div>
-                <div className="headerContainerImg">
-                    <img src={logo} alt="Logo Diseños y Compronentes Electrónicos" className="imagen_logo" />
-                    <span>Diseños y Componentes Electrónicos</span>
-                </div>
+
+                <Link
+                    className="headerContainerImg"
+                    to={`/`}
+                >
+                    <img
+                        src={logo}
+                        alt="Logo Diseños y Compronentes Electrónicos"
+                        className="imagen_logo"
+                    />
+                </Link>
+
             </div>
-            <Nav menuAbierto={menuAbierto} />
+
+            <Nav
+                mostrar={mostrarMenu}
+                menuAbierto={menuOpen}
+                cerrando={cerrando}
+                cerrarMenu={cerrarMenu}
+            />
+
         </header>
-    )
+    );
+
 }
