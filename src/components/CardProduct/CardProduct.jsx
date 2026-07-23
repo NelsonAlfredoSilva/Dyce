@@ -3,9 +3,9 @@ import './CardProduct.css';
 
 
 export const CardProduct = ({ categoria, nombre, prec, stock, img, descripcion , className }) => {
-    const noStock = stock === 0 ? <p className="noStock">Sin Stock</p> : null;
-    const bajoStock = stock > 0 && stock <= 20 ? <p className="bajoStock">Poco Stock</p> : null;
-    const hayStock = stock > 20 ? <p className="hayStock">Hay Stock</p> : null ;
+    const noStock = stock === 0 ? <p className="noStock">No disponible</p> : null;
+    const bajoStock = stock > 0 && stock <= 20 ? <p className="bajoStock">Bajo Stock</p> : null;
+    const hayStock = stock > 20 ? <p className="hayStock">Disponible</p> : null ;
 
 
 
