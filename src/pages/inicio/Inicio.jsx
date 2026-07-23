@@ -13,7 +13,8 @@ export const Inicio= ({productos})=>{
             <WspFloat></WspFloat>
             <BannerSlider></BannerSlider>
             <Cards></Cards>
-            <DestacadoProducto destacados={destacados}></DestacadoProducto>
+            
         </>
     )
 }
+/*<DestacadoProducto destacados={destacados}></DestacadoProducto>*/

@@ -9,8 +9,9 @@
     font-size: 2rem;
     color: var(--marron-cookie);
     margin-bottom: 2rem;
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -68,8 +69,9 @@
     font-weight: 500;
     color: #333;
     overflow: hidden;
-    font-family: "Cherry Bomb One", system-ui;
-    font-weight: 500;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-style: normal;
 }
 
@@ -82,8 +84,9 @@
     color: #888;
     line-height: 1.5;
     overflow: hidden;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
 }
 

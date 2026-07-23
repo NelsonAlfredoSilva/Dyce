@@ -1,0 +1,28 @@
+.contacto {
+    height: 450px;
+}
+
+.contacto .contactoContainerTexto {
+    width: 50%;
+    height: 450px;
+}
+
+.contacto .contactoContainerImg {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(83, 74, 62);
+    clip-path: polygon(55% 0,
+            100% 0,
+            100% 100%,
+            0 100%);
+}
+.contacto .imgNosotros{
+    clip-path: polygon(
+    55% 0,
+    100% 0,
+    100% 100%,
+    0 100%
+);
+}

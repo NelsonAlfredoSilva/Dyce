@@ -6,7 +6,7 @@ export const BannerSlider = ({ }) => {
     const [actual, setActual] = useState(0);
     const banners = [
         {
-            titulo: "Componentes Electronicos Mayorista",
+            titulo: "Componentes Electronicos de alta calidad",
             texto: "",
             imagen: "/b1.jpeg",
             boton: true,
