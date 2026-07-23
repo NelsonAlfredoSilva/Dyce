@@ -15,6 +15,10 @@ footer div {
 
 footer div p {
     width: 60%;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 .titulo_footer {
     width: 100%;
@@ -27,4 +31,8 @@ footer div p {
 
 .ul_footer li {
     margin: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
