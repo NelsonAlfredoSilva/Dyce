@@ -9,17 +9,10 @@ export const Footer = () => {
     return (
         <footer>
             <div>
-<<<<<<< HEAD
-                <img src={logo} alt="Logotipo Dyce S.A." className="imagen_logo" />
-                <p className="titulo_footer">Dyce S.A.</p>
-                <p>Proveedor Lider de componentes electrónicos de alta calidad
-                    para la industria y el desarrollo tecnológico.</p>
-=======
-                <img src={logo} alt="Dyce S.A." className="imagen_logo"/>
+                <img src={logo} alt="Logotipo Dyce S.A." className="imagen_logo"/>
                 <p className="titulo_footer">Dyce S.A.</p>
                 <p>Proveedor Lider en ventas al gremio de componentes electrónicos de alta calidad
                  para la industria y el desarrollo tecnológico.</p>
->>>>>>> main
             </div>
             <div>
                 <h3>ENLACES</h3>
