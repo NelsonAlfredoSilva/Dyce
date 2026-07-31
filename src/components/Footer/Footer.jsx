@@ -1,4 +1,5 @@
 import "./Footer.css"
+import { NavLink } from "react-router-dom"
 import logo from "../../assets/logo.jpg"
 import { MdAlternateEmail } from "react-icons/md"
 import { FaPhone, FaWhatsapp } from "react-icons/fa"
@@ -8,18 +9,50 @@ export const Footer = () => {
     return (
         <footer>
             <div>
-                <img src={logo} alt="Dyce S.A." className="imagen_logo"/>
+                <img src={logo} alt="Logotipo Dyce S.A." className="imagen_logo"/>
                 <p className="titulo_footer">Dyce S.A.</p>
                 <p>Proveedor Lider en ventas al gremio de componentes electrónicos de alta calidad
                  para la industria y el desarrollo tecnológico.</p>
             </div>
             <div>
                 <h3>ENLACES</h3>
-                <ul className="ul_footer">
-                    <li>Inicio</li>
-                    <li>Catálogo</li>
-                    <li>Nosotros</li>
-                    <li>Contacto</li>
+                <ul
+                    className="ul_footer"
+                >
+
+                    <li>
+                        <NavLink
+                            to="/"
+                        >
+                            Inicio
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink
+                            to="/Catalogo"
+
+                        >
+                            Catalogo
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink
+                            to="/Nosotros"
+                        >
+                            Nosotros
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink
+                            to="/Contacto"
+                        >
+                            Contacto
+                        </NavLink>
+                    </li>
+
                 </ul>
             </div>
             <div>
@@ -33,5 +66,5 @@ export const Footer = () => {
                 </ul>
             </div>
         </footer>
-    ) 
+    )
 }
