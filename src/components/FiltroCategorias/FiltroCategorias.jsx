@@ -45,8 +45,8 @@ export const FiltroCategorias = ({ categorias,
                 ></ion-icon>
 
             </div>
-
-            {
+            <div className="dropdownContainerCat">
+                 {
                 categorias.map((categoria) => (
 
                     <div className="categoriaPrincipal" key={categoria.nombre}>
@@ -109,6 +109,8 @@ export const FiltroCategorias = ({ categorias,
 
                 ))
             }
+            </div>
+           
 
         </div>
 
