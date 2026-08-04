@@ -3,40 +3,20 @@ import { CardProduct } from "../../components/CardProduct/CardProduct";
 import { FiltroCategorias } from "../../components/FiltroCategorias/FiltroCategorias";
 import { Buscador } from "../../components/Buscador/Buscador";
 import { WspFloat } from "../../components/WspFloat/WspFloat";
+import { useProductos } from "../../context/ProductosContext";
 import './Catalogo.css';
-export const Catalogo = ({ productos }) => {
+export const Catalogo = ({ }) => {
+    const { productos, categorias } = useProductos();
     const [busqueda, setBusqueda] = useState('');
-    const [catFiltrada, setCatFiltrada] = useState([]);
+    const [subFiltradas, setSubFiltradas] = useState([]);
     const [mostrarFiltros, setMostrarFiltros] = useState(false);
-    const categorias = productos.reduce((acc, producto) => {
-
-    let categoria = acc.find(c => c.nombre === producto.categoria);
-
-    if (!categoria) {
-
-        categoria = {
-            nombre: producto.categoria,
-            subcategorias: []
-        };
-
-        acc.push(categoria);
-
-    }
-
-    if (
-        producto.subcategoria &&
-        !categoria.subcategorias.includes(producto.subcategoria)
-    ) {
-        categoria.subcategorias.push(producto.subcategoria);
-    }
-
-    return acc;
-
-}, []);
 
 
     const productosFiltrados = productos
-        .filter(p => catFiltrada.length === 0 || catFiltrada.includes(p.categoria))
+        .filter(p =>
+            subFiltradas.length === 0 ||
+            subFiltradas.includes(p.subcategoria)
+        )
         .filter(p => p.nombre.toLowerCase().includes(busqueda.toLowerCase()))
 
 
@@ -62,9 +42,9 @@ export const Catalogo = ({ productos }) => {
                         onClick={() => setMostrarFiltros(!mostrarFiltros)}
                     ></ion-icon>
                     <FiltroCategorias
-                        categorias={categoria}
-                        seleccionadas={catFiltrada}
-                        onFiltrar={setCatFiltrada}
+                        categorias={categorias}
+                        seleccionadas={subFiltradas}
+                        onFiltrar={setSubFiltradas}
                         cerrarFiltro={() => setMostrarFiltros(false)}
                         mostrar={mostrarFiltros}
                     />
@@ -73,17 +53,17 @@ export const Catalogo = ({ productos }) => {
                     <div className="categoriasActivas">
 
                         {
-                            catFiltrada.map(cat => (
+                            subFiltradas.map(sub => (
 
-                                <div className="categoriaTag" key={cat}>
+                                <div className="categoriaTag" key={sub}>
 
-                                    <span className="categoriaTagTitulo">{cat}</span>
+                                    <span className="categoriaTagTitulo">{sub}</span>
 
                                     <ion-icon
                                         name="close-outline"
                                         onClick={() =>
-                                            setCatFiltrada(
-                                                catFiltrada.filter(c => c !== cat)
+                                            setSubFiltradas(
+                                                subFiltradas.filter(c => c !== sub)
                                             )
                                         }
                                     ></ion-icon>
@@ -96,11 +76,9 @@ export const Catalogo = ({ productos }) => {
                     </div>
                     <div className="categoriasProd">
                         {
-                            productosFiltrados.map((producto, index) => {
+                            productosFiltrados.map((producto) => {
                                 return (
-                                    <>
-                                        <CardProduct key={index} {...producto}></CardProduct>
-                                    </>
+                                    <CardProduct {...producto}></CardProduct>
                                 )
                             })
                         }
