@@ -8,7 +8,31 @@ export const Catalogo = ({ productos }) => {
     const [busqueda, setBusqueda] = useState('');
     const [catFiltrada, setCatFiltrada] = useState([]);
     const [mostrarFiltros, setMostrarFiltros] = useState(false);
-    const categoria = [...new Set(productos.map(p => p.categoria))]
+    const categorias = productos.reduce((acc, producto) => {
+
+    let categoria = acc.find(c => c.nombre === producto.categoria);
+
+    if (!categoria) {
+
+        categoria = {
+            nombre: producto.categoria,
+            subcategorias: []
+        };
+
+        acc.push(categoria);
+
+    }
+
+    if (
+        producto.subcategoria &&
+        !categoria.subcategorias.includes(producto.subcategoria)
+    ) {
+        categoria.subcategorias.push(producto.subcategoria);
+    }
+
+    return acc;
+
+}, []);
 
 
     const productosFiltrados = productos

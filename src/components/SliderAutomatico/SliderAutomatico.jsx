@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './SliderAutomatico.css'; // Asegúrate de crear este archivo
+import './SliderAutomatico.css'; 
 
 const SliderAutomatico = ({ imagenes }) => {
   const [indiceActual, setIndiceActual] = useState(0);
@@ -11,7 +11,6 @@ const SliderAutomatico = ({ imagenes }) => {
       );
     }, 5000);
 
-    // Limpia el intervalo al desmontar el componente para evitar fugas de memoria
     return () => clearInterval(intervalo);
   }, [imagenes.length]);
 

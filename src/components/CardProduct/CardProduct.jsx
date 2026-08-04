@@ -20,7 +20,6 @@ export const CardProduct = ({ categoria, nombre, prec, stock, img, descripcion ,
                     <div className="-categoria">
                         <p>{categoria}</p>
                     </div>
-                    {/** En el titulo se puede colocar el código del producto */}
                     <div className="-titulo">
                         <p>{nombre}</p>
                     </div>
