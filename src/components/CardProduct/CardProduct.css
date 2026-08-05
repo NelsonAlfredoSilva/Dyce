@@ -72,6 +72,7 @@
     font-style: normal;
     max-height: 1.2rem;
     line-height: .5rem;
+    color: white;
 }
 .cardContainer .cardContainerContent .-categoriaContainer .-subcat{
     background-color: rgba(170, 170, 170, 0.76);
