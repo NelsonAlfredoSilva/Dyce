@@ -78,7 +78,7 @@ export const Catalogo = ({ }) => {
                         {
                             productosFiltrados.map((producto) => {
                                 return (
-                                    <CardProduct {...producto}></CardProduct>
+                                    <CardProduct  key={producto.id}{...producto}></CardProduct>
                                 )
                             })
                         }
