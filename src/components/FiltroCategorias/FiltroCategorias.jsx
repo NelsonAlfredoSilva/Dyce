@@ -1,29 +1,33 @@
 import "./FiltroCategorias.css";
+import { useState } from "react";
 
-export const FiltroCategorias = ({
-    categorias,
+export const FiltroCategorias = ({ categorias,
     seleccionadas,
-    onFiltrar, cerrarFiltro , mostrar
+    onFiltrar,
+    cerrarFiltro,
+    mostrar
 }) => {
+    const [categoriaAbierta, setCategoriaAbierta] = useState(null);
 
-    const toggleCat = (cat) => {
+    const toggleSubcategoria = (subcategoria) => {
 
         let nuevas = [];
 
-        if (seleccionadas.includes(cat)) {
+        if (seleccionadas.includes(subcategoria)) {
 
-            nuevas = seleccionadas.filter(c => c !== cat);
+            nuevas = seleccionadas.filter(
+                s => s !== subcategoria
+            );
 
         } else {
 
-            nuevas = [...seleccionadas, cat];
+            nuevas = [...seleccionadas, subcategoria];
 
         }
 
         onFiltrar(nuevas);
 
     }
-
     return (
 
         <div className={`dropdownContainer ${mostrar ? "dropdownAbierto" : ""}`}>
@@ -41,28 +45,72 @@ export const FiltroCategorias = ({
                 ></ion-icon>
 
             </div>
+            <div className="dropdownContainerCat">
+                 {
+                categorias.map((categoria) => (
 
-            {
-                categorias.map((cat, i) => (
+                    <div className="categoriaPrincipal" key={categoria.nombre}>
 
-                    <div className="dropdowContainerCat" key={i}>
+                        <div
+                            className="categoriaTitulo"
+                            onClick={() =>
+                                setCategoriaAbierta(
+                                    categoriaAbierta === categoria.nombre
+                                        ? null
+                                        : categoria.nombre
+                                )
+                            }
+                        >
 
-                        <label>
+                            <p>{categoria.nombre}</p>
 
-                            <input
-                                type="checkbox"
-                                checked={seleccionadas.includes(cat)}
-                                onChange={() => toggleCat(cat)}
-                            />
+                            <ion-icon
+                                name={
+                                    categoriaAbierta === categoria.nombre
+                                        ? "chevron-down-outline"
+                                        : "chevron-forward-outline"
+                                }
+                            ></ion-icon>
 
-                            {cat}
+                        </div>
 
-                        </label>
+                        {
+                            categoriaAbierta === categoria.nombre && (
+
+                                <div className="subcategorias">
+
+                                    {
+                                        categoria.subcategorias.map((sub) => (
+
+                                            <label
+                                                key={sub}
+                                                className="subcategoriaItem"
+                                            >
+
+                                                <input
+                                                    type="checkbox"
+                                                    checked={seleccionadas.includes(sub)}
+                                                    onChange={() =>toggleSubcategoria(sub)}
+                                                />
+
+                                                {sub}
+
+                                            </label>
+
+                                        ))
+                                    }
+
+                                </div>
+
+                            )
+                        }
 
                     </div>
 
                 ))
             }
+            </div>
+           
 
         </div>
 

@@ -9,21 +9,14 @@ import { LayoutPublic } from './layouts/LayoutPublic';
 import './App.css';
 
 function App() {
-  const [productos, setProductos] = useState([]);
-  useEffect(() => {
-    fetch('/productos.json')
-        .then(res => res.json())
-        .then(data => {
-            setProductos(data)
-        })
-}, [])
+ 
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route element={<LayoutPublic></LayoutPublic>}>
-            <Route path='/' element={<Inicio productos={productos}></Inicio>}></Route>
-            <Route path='/Catalogo' element={<Catalogo productos = {productos}></Catalogo>}></Route>
+            <Route path='/' element={<Inicio></Inicio>}></Route>
+            <Route path='/Catalogo' element={<Catalogo></Catalogo>}></Route>
             <Route path='/Nosotros' element={<Nosotros></Nosotros>}></Route>
             <Route path='/Contacto' element={<Nosotros></Nosotros>}></Route>
           </Route>
