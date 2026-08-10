@@ -17,7 +17,9 @@ export const Catalogo = ({ }) => {
             subFiltradas.length === 0 ||
             subFiltradas.includes(p.subcategoria)
         )
-        .filter(p => p.nombre.toLowerCase().includes(busqueda.toLowerCase()))
+        .filter(p => p.nombre.toLowerCase().includes(busqueda.toLowerCase()) || p.descripcion.toLowerCase().includes(busqueda.toLowerCase())
+        );  
+
 
 
     return (
@@ -61,6 +63,7 @@ export const Catalogo = ({ }) => {
 
                                     <ion-icon
                                         name="close-outline"
+                                        className="closeCategorias"
                                         onClick={() =>
                                             setSubFiltradas(
                                                 subFiltradas.filter(c => c !== sub)
@@ -78,7 +81,7 @@ export const Catalogo = ({ }) => {
                         {
                             productosFiltrados.map((producto) => {
                                 return (
-                                    <CardProduct  key={producto.id}{...producto}></CardProduct>
+                                    <CardProduct key={producto.id}{...producto}></CardProduct>
                                 )
                             })
                         }
