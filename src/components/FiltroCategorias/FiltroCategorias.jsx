@@ -26,6 +26,7 @@ export const FiltroCategorias = ({ categorias,
         }
 
         onFiltrar(nuevas);
+        setCategoriaAbierta(null);
 
     }
     return (

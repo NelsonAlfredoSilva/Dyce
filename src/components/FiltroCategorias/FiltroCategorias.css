@@ -7,6 +7,7 @@
     width: 100%;
     flex-wrap: wrap;
     animation: slideInY .60s ease forwards;
+    background-color: var(--fondo);
 }
 
 .dropdownContainer .dropdownHeader .tituloFiltros {
@@ -120,31 +121,26 @@
         z-index: 50;
         width: 100%;
         height: auto;
-        flex-direction: column;
+        flex-direction: column; 
         gap: .5rem;
     }
 
     .dropdownContainer .dropdowContainerCat {
         width: 220px;
-
         display: flex;
         align-items: center;
         justify-content: center;
-
         border: 1px solid grey;
         border-radius: 20px;
-
         padding: 8px 15px;
     }
 
     .dropdownContainer .dropdowContainerCat label {
 
         width: 100%;
-
         display: flex;
         align-items: start;
         justify-content: start;
-
         gap: .3rem;
 
     }
@@ -175,14 +171,17 @@
         left: 0;
 
     }
+    .dropdownHeader{
+        position: relative;
+        width: 100%;
+    }
 
     .cerrarFiltros {
-
-        display: block;
-
+        position: absolute;
+        bottom: 2.1rem;
+        left: 16rem;
         font-size: 2rem;
-
-        cursor: pointer;
+        display: block;
 
     }
 

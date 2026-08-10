@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     position: relative;
+    
 }
 
 .nav-list li {
@@ -81,7 +82,7 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 9%;
+        top: 8%;
         left: 0;
         z-index: 100;
         background-color: rgb(255, 255, 255);
