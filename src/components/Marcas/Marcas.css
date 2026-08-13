@@ -1,6 +1,7 @@
 .marcas {
     width: 100%;
     overflow: hidden;
+    background-color: var(--cards);
 }
 
 .marcasContainer {
@@ -8,6 +9,7 @@
     gap: .5rem;
     width: max-content;
     animation: moverMarcas 20s linear infinite;
+    background-color: var(--cards);
 }
 .marcasContainer .logosMarcas{
     height: 80px;      

@@ -1,28 +1,85 @@
-.contacto {
-    height: 450px;
+.nosotros {
+    height: 100%;
+    background-size: cover;
 }
 
-.contacto .contactoContainerTexto {
+.nosotros .nosotrosContainerTexto {
     width: 50%;
-    height: 450px;
-}
-
-.contacto .contactoContainerImg {
-    width: 50%;
+    height:auto;
+    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(83, 74, 62);
-    clip-path: polygon(55% 0,
-            100% 0,
-            100% 100%,
-            0 100%);
+    flex-direction: column;
 }
-.contacto .imgNosotros{
-    clip-path: polygon(
-    55% 0,
-    100% 0,
-    100% 100%,
-    0 100%
-);
+
+.nosotros .nosotrosContainerTexto .-titulo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+.nosotros .nosotrosContainerTexto .-texto {
+    height: 90%;
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nosotros .nosotrosContainerTexto .-texto p {
+    background-color: grey;
+    padding: .8rem;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.nosotros .nosotrosContainerTexto .-texto .-textUl {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 1rem;
+    width: 100%;
+}
+
+.nosotros .nosotrosContainerTexto .-texto .-textUl .-textLi {
+    list-style-type: disc;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.nosotros .nosotrosContainerImg {
+    width: 50%;
+}
+.nosotrosMarcas{
+    
+    font-size: 3.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

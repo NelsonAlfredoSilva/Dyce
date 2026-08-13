@@ -1,23 +1,33 @@
 footer {
     display: flex;
-    background-color: var(--cards);
+    position: relative;
+    z-index: 10;
     color: var(--texto);
     padding-top: 5px;
     font-size: 0.75rem;
     border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    position: relative;
-    z-index: 10;
+    margin-top: 100px;
+
 }
 
-footer div {
+/*.waveFooter {
+       width: 100%;
+    height: auto;
+     position: absolute;
+
+    left: 0;
+}*/
+
+
+footer .footerContainer {
     display: flex;
     flex: 1;
     align-items: center;
     flex-direction: column;
 }
 
-footer div p {
+footer .footerContainer p {
     width: 60%;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
