@@ -3,7 +3,8 @@ import { WspFloat } from '../../components/WspFloat/WspFloat';
 import { BannerSlider } from '../../components/BannerSlider/BannerSlider';
 import { Cards } from '../../components/Cards/Cards';
 import { useProductos } from '../../context/ProductosContext';
-
+import marcasData from '../../data/marcasData';
+import { Marcas } from '../../components/Marcas/Marcas';
 export const Inicio= ({})=>{
     const {productos} = useProductos();
     //para destacados
@@ -15,6 +16,7 @@ export const Inicio= ({})=>{
             <WspFloat></WspFloat>
             <BannerSlider></BannerSlider>
             <Cards></Cards>
+            <Marcas marcas={marcasData}></Marcas>
             
         </>
     )

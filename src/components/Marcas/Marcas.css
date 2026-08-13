@@ -1,0 +1,29 @@
+.marcas {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marcasContainer {
+    display: flex;
+    gap: .5rem;
+    width: max-content;
+    animation: moverMarcas 20s linear infinite;
+}
+.marcasContainer .logosMarcas{
+    height: 80px;      
+    width:auto;       
+    object-fit: contain;
+    opacity: .65;
+}
+
+@keyframes moverMarcas {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
