@@ -3,7 +3,10 @@
     text-align: center;
     height: auto;
     overflow: hidden;
-    background-color: var(--fondo);
+    background-image: url(../../assets/blobInicio.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .homeValores h2 {

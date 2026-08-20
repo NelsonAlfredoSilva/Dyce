@@ -1,6 +1,5 @@
 import { WspFloat } from "../../components/WspFloat/WspFloat";
-import marcasData from "../../data/marcasData";
-import { Marcas } from "../../components/Marcas/Marcas";
+import corpo from "../../assets/nosotrosImg.jpg"
 import './Nosotros.css';
 export const Nosotros = () => {
 
@@ -21,19 +20,18 @@ export const Nosotros = () => {
                         <p>Nos destacamos por ofrecer:</p>
                         <ul className="-textUl"> 
                             <li className="-textLi">
+                                <ion-icon name="checkmark-outline" className="check"></ion-icon>
                                 Atención personalizada y asesoramiento especializado.
                             </li>
-                            <li className="-textLi">Entregas a todo el país.</li>
-                            <li className="-textLi">Servicio de reparto en Ciudad Autónoma de Buenos Aires (CABA) y Gran Buenos Aires (GBA).</li>
+                            <li className="-textLi"> <ion-icon name="checkmark-outline" className="check"></ion-icon>Entregas a todo el país.</li>
+                            <li className="-textLi"> <ion-icon name="checkmark-outline" className="check"></ion-icon>Servicio de reparto en Ciudad Autónoma de Buenos Aires (CABA) y Gran Buenos Aires (GBA).</li>
                         </ul>
                     </div>
                 </div>
                <div className="nosotrosContainerImg">
-
+                    <img src={corpo} alt="" />
                </div>
             </section>
-            <h5 className="nosotrosMarcas">Nuestras marcas</h5>
-            <Marcas marcas={marcasData}></Marcas>
         </>
     )
 }

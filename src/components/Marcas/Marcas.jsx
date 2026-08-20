@@ -4,6 +4,7 @@ export const Marcas = ({ marcas }) => {
 
     return (
         <section className="marcas">
+            <h3>Nuestras marcas</h3>
 
             <div className="marcasContainer">
 

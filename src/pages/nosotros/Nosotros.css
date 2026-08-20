@@ -1,12 +1,18 @@
 .nosotros {
-    height: 100%;
+    height: 550px;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/waveH.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .nosotros .nosotrosContainerTexto {
     width: 50%;
-    height:auto;
-    background-color: aqua;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +34,6 @@
 
 .nosotros .nosotrosContainerTexto .-texto {
     height: 90%;
-    background-color: aliceblue;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -36,7 +41,6 @@
 }
 
 .nosotros .nosotrosContainerTexto .-texto p {
-    background-color: grey;
     padding: .8rem;
     height: 20%;
     display: flex;
@@ -47,13 +51,15 @@
 }
 
 .nosotros .nosotrosContainerTexto .-texto .-textUl {
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     padding: 1rem;
     width: 100%;
+    border-radius: 42% 58% 63% 37% / 48% 38% 62% 52%;
+    background-color: #FFA082;
+    padding: 35px 30px;
 }
 
 .nosotros .nosotrosContainerTexto .-texto .-textUl .-textLi {
@@ -61,25 +67,29 @@
     height: auto;
     width: 100%;
     display: flex;
+    gap: .5rem;
     align-items: center;
     justify-content: start;
 }
 
-.nosotros .nosotrosContainerImg {
-    width: 50%;
+.nosotros .nosotrosContainerTexto .-texto .-textUl .-textLi .check {
+    font-size: 1rem;
+    color: black;
 }
-.nosotrosMarcas{
-    
-    font-size: 3.5rem;
-    color: rgb(0, 0, 0);
-    font-weight: 700;
-    letter-spacing: 2px;
 
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.nosotros .nosotrosContainerImg {
+    width: 75%;
+    height: 100%;
+
+    mask-image: url("../../assets/waveMask.svg");
+    mask-repeat: no-repeat;
+    mask-size: 100% auto;
+    mask-position: center;
+    overflow: hidden;
+}
+
+.nosotros .nosotrosContainerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

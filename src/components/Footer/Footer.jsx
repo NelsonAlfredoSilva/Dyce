@@ -4,18 +4,11 @@ import logo from "../../assets/logo.jpg"
 import { MdAlternateEmail } from "react-icons/md"
 import { FaPhone, FaWhatsapp } from "react-icons/fa"
 import { SiGooglemaps } from "react-icons/si"
-import { MapsLink } from "../MapsLink/MapsLink"
-import waveFooter from "../../assets/waveFooter.svg";
 export const Footer = () => {
     return (
         <footer>
-
-
-
-            
             <div className="footerContainer">
                 <img src={logo} alt="Logotipo Dyce S.A." className="imagen_logo" />
-                <p className="titulo_footer">Dyce S.A.</p>
                 <p>Proveedor Lider en ventas al gremio de componentes electrónicos de alta calidad
                     para la industria y el desarrollo tecnológico.</p>
             </div>
@@ -61,7 +54,7 @@ export const Footer = () => {
                 </ul>
             </div>
             <div>
-                <h3>CONTACTO</h3>
+                <h3 className="title_contacto">CONTACTO</h3>
                 <ul className="ul_footer">
                     <li><MdAlternateEmail /> <a href="mailto:info@dyce.com.ar"> info@dyce.com.ar</a></li>
                     <li><FaPhone /> +54 11 5486 9502</li>
@@ -73,4 +66,3 @@ export const Footer = () => {
         </footer>
     )
 }
-/*<img src={waveFooter} alt="" />*/
