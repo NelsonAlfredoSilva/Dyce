@@ -1,28 +1,95 @@
-.contacto {
-    height: 450px;
-}
-
-.contacto .contactoContainerTexto {
-    width: 50%;
-    height: 450px;
-}
-
-.contacto .contactoContainerImg {
-    width: 50%;
+.nosotros {
+    height: 550px;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(83, 74, 62);
-    clip-path: polygon(55% 0,
-            100% 0,
-            100% 100%,
-            0 100%);
+    background-image: url("../../assets/waveH.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.contacto .imgNosotros{
-    clip-path: polygon(
-    55% 0,
-    100% 0,
-    100% 100%,
-    0 100%
-);
+
+.nosotros .nosotrosContainerTexto {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nosotros .nosotrosContainerTexto .-titulo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.8rem;
+}
+
+.nosotros .nosotrosContainerTexto .-texto {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nosotros .nosotrosContainerTexto .-texto p {
+    padding: .8rem;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.nosotros .nosotrosContainerTexto .-texto .-textUl {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 42% 58% 63% 37% / 48% 38% 62% 52%;
+    background-color: #FFA082;
+    padding: 35px 30px;
+}
+
+.nosotros .nosotrosContainerTexto .-texto .-textUl .-textLi {
+    list-style-type: disc;
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: start;
+}
+
+.nosotros .nosotrosContainerTexto .-texto .-textUl .-textLi .check {
+    font-size: 1rem;
+    color: black;
+}
+
+.nosotros .nosotrosContainerImg {
+    width: 75%;
+    height: 100%;
+
+    mask-image: url("../../assets/waveMask.svg");
+    mask-repeat: no-repeat;
+    mask-size: 100% auto;
+    mask-position: center;
+    overflow: hidden;
+}
+
+.nosotros .nosotrosContainerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

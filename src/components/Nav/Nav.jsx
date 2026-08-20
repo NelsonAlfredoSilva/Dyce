@@ -43,17 +43,7 @@ export const Nav = ({ mostrar,
                         className={({ isActive }) => isActive ? "activo" : ""}
                         onClick={cerrarMenu}
                     >
-                        Nosotros
-                    </NavLink>
-                </li>
-
-                <li>
-                    <NavLink
-                        to="/Contacto"
-                        className={({ isActive }) => isActive ? "activo" : ""}
-                        onClick={cerrarMenu}
-                    >
-                        Contacto
+                        Quienes somos
                     </NavLink>
                 </li>
 

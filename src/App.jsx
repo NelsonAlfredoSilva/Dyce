@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState , useEffect } from 'react';
 import { Inicio } from './pages/inicio/Inicio';
 import { Catalogo } from './pages/catalogo/Catalogo';
-import { Contacto } from './pages/contacto/Contacto';
 import { Nosotros } from './pages/nosotros/Nosotros';
 import { LayoutPublic } from './layouts/LayoutPublic';
 import './App.css';

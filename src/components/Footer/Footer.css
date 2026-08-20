@@ -1,36 +1,55 @@
 footer {
+    position: relative;
     display: flex;
-    background-color: var(--cards);
+    z-index: 10;
     color: var(--texto);
-    padding-top: 5px;
     font-size: 0.75rem;
+    margin-top: 100px;
+    padding: 100px 0 30px;
     border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    position: relative;
-    z-index: 10;
+    overflow: hidden;
+    background-image: url("../../assets/waveFooter.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
 }
 
-footer div {
+
+footer .footerContainer {
     display: flex;
     flex: 1;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-footer div p {
+footer .footerContainer p {
     width: 60%;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: white;
+    display: flex;
+    width: 80%;
+    text-align: justify;
+}
+footer .footerContainer h3{
+    color: white;
+}
+.title_contacto{
+    color: white;
 }
 .titulo_footer {
     width: 100%;
     text-align: center;
+    color: white;
 }
 
 .ul_footer {
     list-style: none;
+    color: white;
 }
 
 .ul_footer li {
@@ -39,4 +58,12 @@ footer div p {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    color: white;
+}
+.ul_footer a{
+    text-decoration: none;
+    color: white;
+}
+.imagen_logo{
+    border-radius: 5px;
 }
