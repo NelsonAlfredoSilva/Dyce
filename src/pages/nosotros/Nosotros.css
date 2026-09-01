@@ -114,6 +114,8 @@
         width: 100%;
         height: auto;
         margin-top:80%;
+        align-items: start;
+        justify-content: start;
     }
 
     .nosotrosContainerTexto .-titulo {
@@ -126,6 +128,8 @@
     .nosotrosContainerTexto .-texto {
         width: 100%;
         height: auto;
+        margin: 0;
+        padding: 2rem;
     }
 
     .nosotrosContainerTexto .-texto p {
