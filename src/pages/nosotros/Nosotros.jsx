@@ -28,9 +28,6 @@ export const Nosotros = () => {
                         </ul>
                     </div>
                 </div>
-               <div className="nosotrosContainerImg">
-                    <img src={corpo} alt="" />
-               </div>
             </section>
         </>
     )

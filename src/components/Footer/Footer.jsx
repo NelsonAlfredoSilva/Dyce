@@ -9,8 +9,6 @@ export const Footer = () => {
         <footer>
             <div className="footerContainer">
                 <img src={logo} alt="Logotipo Dyce S.A." className="imagen_logo" />
-                <p>Proveedor Lider en ventas al gremio de componentes electrónicos de alta calidad
-                    para la industria y el desarrollo tecnológico.</p>
             </div>
             <div className="footerContainer">
                 <h3>ENLACES</h3>
