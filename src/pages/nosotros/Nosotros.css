@@ -1,27 +1,29 @@
 .nosotros {
-    height: 550px;
+    height: 700px;
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-image: url("../../assets/waveH.svg");
+    justify-content: start;
+    background-image: url("../../assets/layeredNosotrosOtro.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .nosotros .nosotrosContainerTexto {
-    width: 50%;
-    height: auto;
+    width: 45%;
+    height: 500px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 2rem;
 }
 
 .nosotros .nosotrosContainerTexto .-titulo {
     width: 100%;
-    height: 10%;
+    height: auto;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,25 +31,29 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
 }
 
 .nosotros .nosotrosContainerTexto .-texto {
-    height: 90%;
-    width: 100%;
+    height: 100%;
+    width: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 
 }
 
 .nosotros .nosotrosContainerTexto .-texto p {
-    padding: .8rem;
+    padding: 1rem;
     height: 20%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: start;
     text-align: justify;
     overflow: hidden;
+    font-weight: 800;
 }
 
 .nosotros .nosotrosContainerTexto .-texto .-textUl {
@@ -57,9 +63,6 @@
     justify-content: start;
     padding: 1rem;
     width: 100%;
-    border-radius: 42% 58% 63% 37% / 48% 38% 62% 52%;
-    background-color: #FFA082;
-    padding: 35px 30px;
 }
 
 .nosotros .nosotrosContainerTexto .-texto .-textUl .-textLi {
@@ -70,6 +73,8 @@
     gap: .5rem;
     align-items: center;
     justify-content: start;
+    font-weight: 800;
+    overflow: hidden;
 }
 
 .nosotros .nosotrosContainerTexto .-texto .-textUl .-textLi .check {
@@ -92,4 +97,118 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* TABLETS / CELULARES GRANDES */
+
+@media (max-width: 768px) {
+
+    .nosotros {
+        height: auto;
+        flex-direction: column;
+        background-image: url("../../assets/nosotrosCelus.svg");
+    }
+
+    /* ---------- TEXTO ---------- */
+    .nosotros .nosotrosContainerTexto {
+        width: 100%;
+        height: auto;
+        margin-top:80%;
+    }
+
+    .nosotrosContainerTexto .-titulo {
+        width: 100%;
+        height: auto;
+        font-size: 1.2rem;
+        margin-bottom:6rem ;
+    }
+
+    .nosotrosContainerTexto .-texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .nosotrosContainerTexto .-texto p {
+        width: 100%;
+        height: auto;
+        font-size: .9rem;
+    }
+
+
+    .nosotrosContainerTexto .-texto .-textUl {
+        width: 100%;
+        height: auto;
+
+        padding: 25px 20px;
+
+        margin-top: 1rem;
+    }
+
+    .nosotrosContainerTexto .-texto .-textUl .-textLi {
+        width: 100%;
+        height: auto;
+
+        margin-bottom: .8rem;
+
+        align-items: flex-start;
+    }
+
+    
+}
+
+
+/* CELULARES */
+
+@media (max-width: 480px) {
+
+    .nosotros {
+        height: auto;
+        flex-direction: column;
+        background-image: url("../../assets/nosotrosCelus.svg");
+    }
+
+    /* ---------- TEXTO ---------- */
+    .nosotros .nosotrosContainerTexto {
+        width: 100%;
+        height: auto;
+        margin-top:120% ;
+    }
+
+    .nosotrosContainerTexto .-titulo {
+        width: 100%;
+        height: auto;
+        font-size: 1.2rem;
+        margin-bottom:6rem ;
+    }
+
+    .nosotrosContainerTexto .-texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .nosotrosContainerTexto .-texto p {
+        width: 100%;
+        height: auto;
+        font-size: .9rem;
+    }
+
+
+    .nosotrosContainerTexto .-texto .-textUl {
+        width: 100%;
+        height: auto;
+
+        padding: 25px 20px;
+
+        margin-top: 1rem;
+    }
+
+    .nosotrosContainerTexto .-texto .-textUl .-textLi {
+        width: 100%;
+        height: auto;
+
+        margin-bottom: .8rem;
+
+        align-items: flex-start;
+    }
+
 }

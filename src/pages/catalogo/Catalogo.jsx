@@ -1,12 +1,13 @@
-import { useState, useEffect } from "react";
+/*import { useState, useEffect } from "react";
 import { CardProduct } from "../../components/CardProduct/CardProduct";
 import { FiltroCategorias } from "../../components/FiltroCategorias/FiltroCategorias";
-import { Buscador } from "../../components/Buscador/Buscador";
-import { WspFloat } from "../../components/WspFloat/WspFloat";
-import { useProductos } from "../../context/ProductosContext";
+import { Buscador } from "../../components/Buscador/Buscador";*/
+/*import { WspFloat } from "../../components/WspFloat/WspFloat";
+import { useProductos } from "../../context/ProductosContext";*/
+import { EstadoPag } from '../../components/EstadosPagina/EstadoPag';
 import './Catalogo.css';
 export const Catalogo = ({ }) => {
-    const { productos, categorias } = useProductos();
+    /*const { productos, categorias } = useProductos();
     const [busqueda, setBusqueda] = useState('');
     const [subFiltradas, setSubFiltradas] = useState([]);
     const [mostrarFiltros, setMostrarFiltros] = useState(false);
@@ -19,13 +20,20 @@ export const Catalogo = ({ }) => {
         )
         .filter(p => p.nombre.toLowerCase().includes(busqueda.toLowerCase()) || p.descripcion.toLowerCase().includes(busqueda.toLowerCase())
         );  
-
+        */
 
 
     return (
         <>
-            <WspFloat></WspFloat>
-            <section className="catalogoFiltros">
+            <EstadoPag
+                titulo="Página en mantenimiento" 
+                subtitulo="Pronto podrás ver nuestro catálogo!"
+            ></EstadoPag>
+        </>
+    )
+}
+/*-- CATALOGO
+<section className="catalogoFiltros">
                 <Buscador onBuscar={setBusqueda}></Buscador>
             </section>
             <section className="catalogoProd">
@@ -88,7 +96,4 @@ export const Catalogo = ({ }) => {
                     </div>
 
                 </div>
-            </section>
-        </>
-    )
-}
+            </section>*/

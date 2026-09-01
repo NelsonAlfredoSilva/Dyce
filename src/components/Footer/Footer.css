@@ -37,15 +37,33 @@ footer .footerContainer p {
 }
 footer .footerContainer h3{
     color: white;
+     font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.1rem;
 }
 .title_contacto{
     color: white;
+     font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.1rem;
+    
+
 }
 .titulo_footer {
     width: 100%;
     text-align: center;
     color: white;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
 }
+
 
 .ul_footer {
     list-style: none;
@@ -58,6 +76,7 @@ footer .footerContainer h3{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: .9rem;
     color: white;
 }
 .ul_footer a{
@@ -66,4 +85,55 @@ footer .footerContainer h3{
 }
 .imagen_logo{
     border-radius: 5px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        background-size: auto 350%;
+        background-position: bottom center;
+    }
+
+    footer .footerContainer {
+        width: 50%;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 2rem;
+    }
+
+    footer .footerContainer p {
+        width: 90%;
+        text-align: center;
+        color: black;
+        font-size: 1.1rem;
+    }
+
+    footer .footerContainer h3 {
+        margin-bottom: 1rem;
+    }
+
+    .ul_footer {
+        padding: 0;
+        text-align: center;
+
+    }
+
+    .ul_footer li {
+        margin: .8rem;
+    }
+
+    .title_contacto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagen_logo {
+        width: 130px;
+    }
 }
