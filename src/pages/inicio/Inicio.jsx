@@ -5,6 +5,7 @@ import { Cards } from '../../components/Cards/Cards';
 import { useProductos } from '../../context/ProductosContext';
 import marcasData from '../../data/marcasData';
 import { Marcas } from '../../components/Marcas/Marcas';
+import { Valores } from '../../components/Valores/Valores';
 export const Inicio= ({})=>{
     const {productos} = useProductos();
     //para destacados
@@ -15,7 +16,7 @@ export const Inicio= ({})=>{
         <>
             <WspFloat></WspFloat>
             <BannerSlider></BannerSlider>
-            <Cards></Cards>
+            <Valores></Valores>
             <Marcas marcas={marcasData}></Marcas>
             
         </>
